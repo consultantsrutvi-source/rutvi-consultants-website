@@ -2,501 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rutvi Consultants – NEET & JEE Lecturer Consultancy</title>
+  <title>Rutvi Consultants – Faculty Recruitment for JEE, NEET, KCT & CBSE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Rutvi Consultants – Education consultancy helping coaching institutes connect with NEET & JEE lecturers."
-  />
+  <meta name="description" content="Rutvi Consultants is an all-India educational consultancy providing expert recruitment of experienced faculty for JEE, NEET, KCT, and CBSE boards. We connect reputed colleges, coaching institutes, and schools with highly qualified lecturers and subject experts to ensure quality education and academic excellence." />
+  <meta name="keywords" content="JEE faculty recruitment, NEET lecturer recruitment, KCT faculty consultancy, CBSE teacher recruitment, education consultancy India, coaching faculty providers, lecturer recruitment agency, teacher recruitment consultants, Rutvi Consultants, faculty hiring services India" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    body {
-      background: #f3f4f6;
-      color: #111827;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    /* HEADER + NAVBAR */
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 0;
-      z-index: 20;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .logo-wrap {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo-image {
-      width: 40px;
-      height: 40px;
-      border-radius: 999px;
-      object-fit: cover;
-      border: 1px solid #e5e7eb;
-    }
-
-    .logo-text {
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: 0.03em;
-    }
-
-    .logo-text span {
-      color: #2563eb;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    nav a {
-      font-size: 0.9rem;
-      color: #2563eb;
-      padding: 6px 12px;
-      border-radius: 999px;
-      border: 1px solid #bfdbfe;
-      background: #eff6ff;
-      transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
-    }
-
-    nav a:hover {
-      background: #2563eb;
-      color: #ffffff;
-      transform: translateY(-1px);
-    }
-
-    /* GENERAL LAYOUT */
-
-    main {
-      padding-bottom: 40px;
-    }
-
-    section {
-      padding: 28px 0;
-    }
-
-    section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 6px;
-    }
-
-    section p.lead {
-      color: #4b5563;
-      margin-bottom: 14px;
-    }
-
-    /* HERO SECTION */
-
-    .hero {
-      padding: 32px 0 24px;
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.7fr);
-      gap: 24px;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #e0ebff;
-      color: #1d4ed8;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      margin-bottom: 10px;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 6px;
-    }
-
-    .hero h2 {
-      font-size: 1.15rem;
-      font-weight: 500;
-      color: #4b5563;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: #4b5563;
-      margin-bottom: 16px;
-    }
-
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 8px;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-      border-radius: 999px;
-      padding: 9px 18px;
-      font-size: 0.95rem;
-      border: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      font-weight: 500;
-    }
-
-    .btn-primary {
-      background: #2563eb;
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-
-    .btn-secondary {
-      background: #ffffff;
-      color: #2563eb;
-      border: 1px solid #bfdbfe;
-    }
-
-    .btn-secondary:hover {
-      background: #eff6ff;
-    }
-
-    .small-muted {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-top: 4px;
-    }
-
-    .hero-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 18px;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-
-    .hero-card h3 {
-      font-size: 1.05rem;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .hero-card ul {
-      margin-left: 18px;
-    }
-
-    /* GRID + CARDS */
-
-    .grid {
-      display: grid;
-      gap: 16px;
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 16px;
-      border: 1px solid #e5e7eb;
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-
-    .card h3 {
-      margin-bottom: 6px;
-      font-size: 1.05rem;
-      color: #111827;
-    }
-
-    .steps-list {
-      list-style: decimal;
-      margin-left: 20px;
-      color: #4b5563;
-    }
-
-    .contact-details p {
-      margin-bottom: 6px;
-    }
-
-    .contact-details strong {
-      display: inline-block;
-      width: 120px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #111827;
-      color: #e5e7eb;
-      font-size: 0.85rem;
-    }
-
-    .footer-inner {
-      padding: 18px 0;
-    }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-
-    footer a {
-      color: #9ca3af;
-      margin-left: 10px;
-    }
-
-    footer a:hover {
-      color: #e5e7eb;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        position: static;
-      }
-
-      nav {
-        justify-content: flex-start;
-      }
-    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+    body{background:#f0fdf4;color:#052e16;line-height:1.6}
+    a{text-decoration:none}
+    header{background:#ffffff;border-bottom:1px solid #bbf7d0;position:sticky;top:0;z-index:20}
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:12px;flex-wrap:wrap}
+    .logo-wrap{display:flex;align-items:center;gap:10px}
+    .logo-image{width:40px;height:40px;border-radius:999px;object-fit:cover;border:1px solid #bbf7d0}
+    .logo-text{font-weight:700;font-size:1.1rem;letter-spacing:.03em}
+    .logo-text span{color:#16a34a}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{font-size:.9rem;color:#166534;padding:6px 12px;border-radius:999px;border:1px solid #bbf7d0;background:#dcfce7;transition:background .15s,color .15s,transform .1s}
+    nav a:hover{background:#16a34a;color:#fff;transform:translateY(-1px)}
+    nav a.active{background:#16a34a;color:#fff}
+    main{padding-bottom:40px}
+    section{padding:28px 0}
+    section h2{font-size:1.5rem;margin-bottom:6px}
+    section p.lead{color:#166534;margin-bottom:14px}
+    .hero{padding:32px 0 24px;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1.7fr);gap:24px;align-items:center}
+    .badge{display:inline-block;background:#bbf7d0;color:#166534;padding:4px 10px;border-radius:999px;font-size:.8rem;margin-bottom:10px}
+    .hero h1{font-size:2rem;margin-bottom:6px}
+    .hero h2{font-size:1.15rem;font-weight:500;color:#166534;margin-bottom:10px}
+    .hero p{color:#166534;margin-bottom:16px}
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+    .btn-primary,.btn-secondary,.btn-choice{border-radius:999px;padding:9px 18px;font-size:.95rem;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-weight:500}
+    .btn-primary{background:#16a34a;color:#fff}
+    .btn-primary:hover{background:#15803d}
+    .btn-secondary{background:#fff;color:#166534;border:1px solid #bbf7d0}
+    .btn-secondary:hover{background:#dcfce7}
+    .btn-choice{background:#fff;color:#166534;border:1px solid #bbf7d0;min-width:150px}
+    .btn-choice:hover{background:#dcfce7}
+    .small-muted{font-size:.8rem;color:#4b5563;margin-top:4px}
+    .hero-card{background:#fff;border-radius:18px;padding:18px;border:1px solid #bbf7d0;box-shadow:0 10px 24px rgba(22,163,74,.18);font-size:.95rem;color:#166534}
+    .hero-card h3{font-size:1.05rem;margin-bottom:8px;color:#052e16}
+    .hero-card ul{margin-left:18px}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+    .card{background:#fff;border-radius:16px;padding:16px;border:1px solid #bbf7d0;font-size:.95rem;color:#166534}
+    .card h3{margin-bottom:6px;font-size:1.05rem;color:#052e16}
+    footer{background:#052e16;color:#e5e7eb;font-size:.85rem}
+    .footer-inner{padding:18px 0}
+    .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+    footer a{color:#9ca3af;margin-left:10px}
+    footer a:hover{color:#e5e7eb}
+    @media(max-width:768px){.hero{grid-template-columns:1fr}header{position:static}nav{justify-content:flex-start}}
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="logo-wrap">
-        <!-- 
-          IF YOU HAVE A LOGO IMAGE:
-          1. Upload your logo file in GitHub as: logo.png
-          2. This image will start showing automatically.
-        -->
         <img src="logo.png.jpg" alt="Rutvi Consultants Logo" class="logo-image" />
         <div class="logo-text">Rutvi <span>Consultants</span></div>
       </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#process">How we work</a>
-        <a href="#contact">Contact</a>
-        <a href="#privacy">Privacy</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="institutes.html">For Institutes</a>
+        <a href="lecturers.html">For Lecturers</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- HERO -->
-    <section class="hero" id="top">
+    <section class="hero">
       <div>
-        <div class="badge">Partnership Firm · Education Consultancy</div>
-        <h1>Rutvi Consultants</h1>
-        <h2>NEET &amp; JEE Lecturer Consultancy for Coaching Institutes</h2>
+        <div class="badge">All-India Educational Recruitment Consultancy</div>
+        <h1>Faculty Recruitment for JEE, NEET, KCT &amp; CBSE</h1>
+        <h2>Connecting reputed institutions with experienced lecturers and subject experts across India.</h2>
         <p>
-          We help coaching institutes in and around Bengaluru connect with reliable
-          NEET &amp; JEE teaching faculty. Institutes get support in finding the
-          right lecturers, and teachers get help in finding suitable opportunities.
+          Rutvi Consultants specializes in academic staffing for colleges, coaching institutes and schools.
+          We help institutions hire verified and experienced faculty while supporting educators in finding the
+          right teaching opportunities.
         </p>
+
+        <div class="btn-row" style="margin-bottom:14px;">
+          <a class="btn-choice" href="institutes.html">I'm an Institute</a>
+          <a class="btn-choice" href="lecturers.html">I'm a Lecturer</a>
+        </div>
+
         <div class="btn-row">
-          <a
-            class="btn-primary"
-            href="https://wa.me/918317469133"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn-primary" href="https://wa.me/918317469133" target="_blank" rel="noopener noreferrer">
             💬 Chat with us on WhatsApp
           </a>
-          <a class="btn-secondary" href="#contact">View contact details</a>
+          <a class="btn-secondary" href="contact.html">View contact details</a>
         </div>
         <p class="small-muted">
-          By contacting us, you agree that we may respond via WhatsApp, call, or email
-          using the details you share.
+          By contacting us, you agree that we may respond via WhatsApp, call, or email using the details you share.
         </p>
       </div>
 
       <div class="hero-card">
-        <h3>Why institutes work with us</h3>
+        <h3>At a glance</h3>
         <ul>
-          <li>Focused on NEET &amp; JEE coaching requirements</li>
-          <li>Simple and clear communication with one contact point</li>
-          <li>Support in understanding faculty needs and expectations</li>
-          <li>Time-saving for institutes during faculty hiring</li>
+          <li>Pan-India faculty recruitment for JEE, NEET, KCT &amp; CBSE boards</li>
+          <li>Dedicated to academic and coaching institutions</li>
+          <li>Verified lecturers and transparent recruitment process</li>
+          <li>Support for both institutions and educators</li>
         </ul>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Rutvi Consultants</h2>
+    <section>
+      <h2>Our Core Services</h2>
       <p class="lead">
-        Rutvi Consultants is an education consultancy that connects NEET &amp; JEE coaching
-        institutes with suitable teaching faculty.
-      </p>
-      <p>
-        We understand that the quality of faculty makes a big difference in the performance
-        of students preparing for competitive exams like NEET and JEE. Our role is to act as
-        a bridge between institutes that need dependable subject teachers and lecturers who
-        are looking for the right workplace.
-      </p>
-      <p>
-        Our work is based on professionalism, transparency and simple communication. We focus
-        on long-term relationships where both institutes and lecturers feel supported.
-      </p>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services">
-      <h2>Our Services</h2>
-      <p class="lead">
-        We provide support related to NEET &amp; JEE teaching faculty for coaching centres.
+        End-to-end academic recruitment and staffing solutions for colleges, coaching institutes and schools.
       </p>
       <div class="grid grid-3">
-        <div class="card">
-          <h3>Faculty Recommendations</h3>
-          <p>
-            We suggest NEET &amp; JEE lecturers to institutes based on subjects, experience
-            level and the type of batches they handle.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Vacancy Collection</h3>
-          <p>
-            We collect details of current and upcoming faculty vacancies from coaching
-            institutes, so that suitable teachers can be informed.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Institute–Lecturer Matching</h3>
-          <p>
-            We help align institute requirements and lecturer expectations with the aim of
-            creating a good and stable working relationship.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Basic Coordination Support</h3>
-          <p>
-            We support simple coordination like sharing contact details with consent and
-            helping both sides connect for discussions or interviews.
-          </p>
-        </div>
+        <div class="card"><h3>Recruitment of JEE Faculty</h3></div>
+        <div class="card"><h3>Recruitment of NEET Faculty</h3></div>
+        <div class="card"><h3>Recruitment of KCT Faculty</h3></div>
+        <div class="card"><h3>Recruitment of CBSE Teachers</h3></div>
+        <div class="card"><h3>Teaching &amp; Non-Teaching Staff</h3></div>
+        <div class="card"><h3>Faculty Verification &amp; Coordination</h3></div>
       </div>
     </section>
 
-    <!-- HOW WE WORK -->
-    <section id="process">
-      <h2>How We Work</h2>
+    <section>
+      <h2>Why Choose Rutvi Consultants</h2>
       <p class="lead">
-        Our process is kept simple so institutes and lecturers can focus on teaching.
+        Reliable academic recruitment partner for both institutions and educators.
       </p>
-      <div class="card">
-        <ol class="steps-list">
-          <li>Coaching institute shares its faculty requirement with us.</li>
-          <li>We understand subject, timings, batch strength and other basic details.</li>
-          <li>We identify lecturers who may be suitable and interested.</li>
-          <li>With consent, we help both sides connect for further discussion.</li>
-          <li>If both sides agree, they directly finalise their terms and conditions.</li>
-        </ol>
-        <p style="margin-top: 8px; font-size: 0.9rem; color: #6b7280;">
-          Note: Rutvi Consultants only assists in connecting institutes and lecturers.
-          Final decisions, salary, and other terms are decided directly by them.
-        </p>
+      <div class="grid grid-3">
+        <div class="card"><h3>Pan-India Recruitment</h3><p>We support hiring across multiple cities and states in India.</p></div>
+        <div class="card"><h3>Verified Lecturers</h3><p>Faculty screening and basic background checks before recommendation.</p></div>
+        <div class="card"><h3>Fast Hiring Process</h3><p>Time-saving coordination between institutions and educators.</p></div>
+        <div class="card"><h3>Transparent Process</h3><p>Clear communication and ethical recruitment practices.</p></div>
+        <div class="card"><h3>Strong Academic Network</h3><p>Growing pool of lecturers and subject experts.</p></div>
+        <div class="card"><h3>Dedicated Support</h3><p>Guidance for both institutions and lecturers during hiring.</p></div>
       </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p class="lead">
-        Institutes looking for faculty, or lecturers looking for opportunities, can contact
-        us using the details below.
-      </p>
-      <div class="card contact-details">
-        <p><strong>Firm Name:</strong> Rutvi Consultants (Partnership Firm)</p>
-        <p>
-          <strong>Address:</strong>
-          37, Anjanadri Layout, Tarbanahalli, Bengaluru, Karnataka – 560090
-        </p>
-        <p><strong>Phone:</strong> +91 8317469133</p>
-        <p><strong>WhatsApp:</strong> +91 8317469133</p>
-        <p><strong>Email:</strong> Consultantsrutvi@gmail.com</p>
-        <p class="small-muted">
-          Response time can vary, but we aim to reply as early as possible during normal
-          working hours.
-        </p>
-      </div>
-    </section>
-
-    <!-- PRIVACY -->
-    <section id="privacy">
-      <h2>Privacy Policy</h2>
-      <p class="lead">
-        We respect your privacy and handle your details with care.
-      </p>
-      <p>
-        When you contact Rutvi Consultants by phone, WhatsApp or email, we may collect
-        basic information such as your name, contact number, email address and details
-        about your institute or teaching requirement.
-      </p>
-      <p>
-        We use this information only to:
-      </p>
-      <ul style="margin-left: 18px; margin-bottom: 8px; color: #4b5563;">
-        <li>Respond to your enquiry</li>
-        <li>Share relevant information about faculty or vacancies</li>
-        <li>Coordinate communication between institutes and lecturers</li>
-      </ul>
-      <p>
-        We do not sell your personal information to unrelated third parties for marketing.
-        Information is shared only with the parties directly involved in the consultancy
-        process, where it is relevant and with reasonable care.
-      </p>
-      <p>
-        If you would like us to update or delete your contact details from our records,
-        please email us at <strong>Consultantsrutvi@gmail.com</strong>.
-      </p>
     </section>
   </main>
 
@@ -512,13 +154,11 @@
         </div>
       </div>
       <div>
-        <a href="#top">Back to top</a>
-        <a href="#privacy">Privacy Policy</a>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
