@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – Rutvi Consultants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rutvi Consultants is an all-India educational recruitment consultancy specialising in JEE, NEET, KCT and CBSE faculty hiring." />
+  <meta name="keywords" content="education consultancy India, JEE faculty recruitment, NEET lecturer recruitment, CBSE teacher recruitment, academic staffing, Rutvi Consultants" />
+  <style>
+    /* Same styles as index for consistency */
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+    body{background:#f0fdf4;color:#052e16;line-height:1.6}
+    a{text-decoration:none}
+    header{background:#ffffff;border-bottom:1px solid #bbf7d0;position:sticky;top:0;z-index:20}
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:12px;flex-wrap:wrap}
+    .logo-wrap{display:flex;align-items:center;gap:10px}
+    .logo-image{width:40px;height:40px;border-radius:999px;object-fit:cover;border:1px solid #bbf7d0}
+    .logo-text{font-weight:700;font-size:1.1rem;letter-spacing:.03em}
+    .logo-text span{color:#16a34a}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{font-size:.9rem;color:#166534;padding:6px 12px;border-radius:999px;border:1px solid:#bbf7d0;background:#dcfce7;transition:background .15s,color .15s,transform .1s}
+    nav a:hover{background:#16a34a;color:#fff;transform:translateY(-1px)}
+    nav a.active{background:#16a34a;color:#fff}
+    main{padding-bottom:40px}
+    section{padding:28px 0}
+    section h1,section h2{margin-bottom:6px}
+    section p.lead{color:#166534;margin-bottom:14px}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+    .card{background:#fff;border-radius:16px;padding:16px;border:1px solid #bbf7d0;font-size:.95rem;color:#166534}
+    .card h3{margin-bottom:6px;font-size:1.05rem;color:#052e16}
+    footer{background:#052e16;color:#e5e7eb;font-size:.85rem}
+    .footer-inner{padding:18px 0}
+    .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+    footer a{color:#9ca3af;margin-left:10px}
+    footer a:hover{color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo-wrap">
+        <img src="logo.png.jpg" alt="Rutvi Consultants Logo" class="logo-image" />
+        <div class="logo-text">Rutvi <span>Consultants</span></div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="institutes.html">For Institutes</a>
+        <a href="lecturers.html">For Lecturers</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>About Rutvi Consultants</h1>
+      <p class="lead">
+        Rutvi Consultants is a professional educational recruitment and consultancy firm dedicated to strengthening the education system by bridging the gap between institutions and talented educators.
+      </p>
+      <p>
+        We specialize in the recruitment of qualified and experienced faculty for JEE, NEET, KCT, and CBSE board coaching and institutions across India. With a strong network of lecturers and academic professionals, we ensure that every institution gets the right educator for the right role.
+      </p>
+      <p>
+        Our consultancy follows a transparent, ethical, and result-oriented recruitment process. We focus on long-term relationships and aim to support both institutions and educators throughout the hiring journey.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to improve the quality of education in India by providing highly skilled, trained, and dedicated teaching professionals to educational institutions and coaching centers nationwide.
+      </p>
+
+      <h2 style="margin-top:16px;">Our Vision</h2>
+      <p>
+        To become a trusted and leading educational recruitment consultancy in India, known for quality, integrity, and excellence in academic staffing.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Team</h2>
+      <p class="lead">
+        A small, focused team combining academic understanding and operational experience.
+      </p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Academic Coordination</h3>
+          <p>
+            Handles understanding of subject requirements, exam patterns and academic expectations of institutes and candidates.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Recruitment &amp; Screening</h3>
+          <p>
+            Manages faculty sourcing, screening, basic verification and shortlisting for different subjects and boards.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Institute &amp; Educator Support</h3>
+          <p>
+            Takes care of communication, follow-ups and coordination so that both institutes and lecturers have a smooth experience.
+          </p>
+        </div>
+      </div>
+      <p style="margin-top:10px;font-size:.9rem;color:#166534;">
+        We keep our structure lean and efficient so that we can respond faster and stay closely involved with every requirement.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <strong>Rutvi Consultants</strong> · Partnership Firm<br />
+          Bengaluru, Karnataka, India
+        </div>
+        <div>
+          © <span id="year"></span> Rutvi Consultants. All rights reserved.
+        </div>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
