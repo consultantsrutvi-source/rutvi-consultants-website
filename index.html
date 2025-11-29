@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rutvi Consultants – NEET & JEE Lecturer Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Rutvi Consultants – Specialist consultancy providing qualified NEET & JEE lecturers and academic support for coaching institutes."
+  />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    body { background: #f5f5f7; color: #222; line-height: 1.6; }
+    header { background: #ffffffcc; position: sticky; top: 0; border-bottom: 1px solid #e0e0e0; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
+    .logo { font-weight: 700; font-size: 1.1rem; }
+    .logo span { color: #1a73e8; }
+    nav a { margin-left: 18px; text-decoration: none; color: #444; }
+    .hero { padding: 60px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .badge { background: #e8f0fe; color: #1a73e8; padding: 6px 12px; border-radius: 999px; font-size: 0.8rem; display: inline-block; }
+    .btn-primary { background: #1a73e8; color: #fff; padding: 10px 18px; border-radius: 999px; text-decoration: none; }
+    .btn-secondary { border: 1px solid #1a73e8; color: #1a73e8; padding: 10px 18px; border-radius: 999px; text-decoration: none; }
+    .card { background: white; border-radius: 16px; padding: 18px; border: 1px solid #e7ebf3; }
+    footer { background: #111827; color: #fff; padding: 20px 0; margin-top: 40px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">Rutvi <span>Consultants</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="badge">A Partnership Firm · Education Consultancy</div>
+      <h1>Rutvi Consultants</h1>
+      <h3>NEET & JEE Lecturer Consultancy</h3>
+      <p>We help coaching institutes connect with qualified NEET & JEE faculty.</p>
+      <br>
+      <a class="btn-primary" href="https://wa.me/918317469133" target="_blank">Chat on WhatsApp</a>
+      <a class="btn-secondary" href="#contact">Contact Details</a>
+    </div>
+
+    <div class="card">
+      <h3>Why Choose Us</h3>
+      <ul>
+        <li>Focused on NEET & JEE faculty</li>
+        <li>Fast and reliable coordination</li>
+        <li>Professional consultancy approach</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Rutvi Consultants is an education consultancy firm helping institutes find the right NEET & JEE lecturers.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="card">Faculty Recommendations</div>
+    <div class="card">Vacancy Collection</div>
+    <div class="card">Institute–Lecturer Matching</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Firm:</strong> Rutvi Consultants (Partnership Firm)</p>
+    <p><strong>Address:</strong> 37, Anjanadri Layout, Tarbanahalli, Bengaluru, Karnataka – 560090</p>
+    <p><strong>Phone & WhatsApp:</strong> +91 8317469133</p>
+    <p><strong>Email:</strong> Consultantsrutvi@gmail.com</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We collect basic contact details only to respond to enquiries. We do not sell or misuse personal data.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Rutvi Consultants | Bengaluru, Karnataka
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
