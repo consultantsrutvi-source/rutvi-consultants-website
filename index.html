@@ -46,6 +46,15 @@
     .grid-3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
     .card{background:#fff;border-radius:16px;padding:16px;border:1px solid #bbf7d0;font-size:.95rem;color:#166534}
     .card h3{margin-bottom:6px;font-size:1.05rem;color:#052e16}
+
+    /* how-it-works flow */
+    .flow-wrapper{background:#ecfdf3;border-radius:18px;padding:18px;border:1px solid #bbf7d0}
+    .flow-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .flow-step{display:flex;align-items:flex-start;gap:10px}
+    .flow-num{min-width:32px;height:32px;border-radius:999px;border:2px solid #16a34a;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;background:#ffffff;box-shadow:0 4px 10px rgba(22,163,74,.18)}
+    .flow-text-title{font-weight:600;margin-bottom:2px;color:#052e16;font-size:.95rem}
+    .flow-text-desc{font-size:.86rem;color:#166534}
+
     footer{background:#052e16;color:#e5e7eb;font-size:.85rem}
     .footer-inner{padding:18px 0}
     .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
@@ -73,6 +82,7 @@
   </header>
 
   <main class="container">
+    <!-- HERO -->
     <section class="hero">
       <div>
         <div class="badge">All-India Educational Recruitment Consultancy</div>
@@ -89,7 +99,12 @@
         </div>
 
         <div class="btn-row">
-          <a class="btn-primary" href="https://wa.me/918317469133?text=Hi%20Rutvi%20Consultants%2C%20I%20am%20an%20Institute%20or%20a%20Lecturer.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer">
+          <a
+            class="btn-primary"
+            href="https://wa.me/918317469133?text=Hi%20Rutvi%20Consultants%2C%20I%20am%20an%20Institute%20or%20a%20Lecturer.%20Please%20guide%20me."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             💬 Chat with us on WhatsApp
           </a>
           <a class="btn-secondary" href="contact.html">View contact details</a>
@@ -111,6 +126,7 @@
       </div>
     </section>
 
+    <!-- CORE SERVICES -->
     <section>
       <h2>Our Core Services</h2>
       <p class="lead">
@@ -126,6 +142,7 @@
       </div>
     </section>
 
+    <!-- WHY CHOOSE US -->
     <section>
       <h2>Why Choose Rutvi Consultants</h2>
       <p class="lead">
@@ -138,6 +155,77 @@
         <div class="card"><h3>Transparent Process</h3><p>Clear communication and ethical recruitment practices.</p></div>
         <div class="card"><h3>Strong Academic Network</h3><p>Growing pool of lecturers and subject experts.</p></div>
         <div class="card"><h3>Dedicated Support</h3><p>Guidance for both institutions and lecturers during hiring.</p></div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS FLOW -->
+    <section>
+      <h2>How Our Process Works</h2>
+      <p class="lead">
+        A simple, step-by-step recruitment flow to keep things clear for both institutes and lecturers.
+      </p>
+      <div class="flow-wrapper">
+        <div class="flow-grid">
+          <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div>
+              <div class="flow-text-title">Requirement analysis and candidate profiling</div>
+              <div class="flow-text-desc">
+                We understand the institute’s requirement in detail and match it with suitable lecturer profiles.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div>
+              <div class="flow-text-title">Screening and telephonic interview</div>
+              <div class="flow-text-desc">
+                Initial screening and telephonic discussions are done to check basic fit, interest and availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div>
+              <div class="flow-text-title">Verification</div>
+              <div class="flow-text-desc">
+                We verify previous experience and subject knowledge as reasonably as possible before sharing the profile.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">4</div>
+            <div>
+              <div class="flow-text-title">Demo scheduling, coordination and college interaction</div>
+              <div class="flow-text-desc">
+                Demo classes, interaction with the college or institute and basic coordination are arranged as required.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">5</div>
+            <div>
+              <div class="flow-text-title">Final selection and support</div>
+              <div class="flow-text-desc">
+                Once both sides are satisfied, the institute makes the final selection. We remain available for any clarifications.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">6</div>
+            <div>
+              <div class="flow-text-title">Joining assistance</div>
+              <div class="flow-text-desc">
+                We assist during the joining stage, helping with smooth communication between institute and lecturer.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
