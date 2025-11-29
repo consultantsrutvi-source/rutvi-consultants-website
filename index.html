@@ -21,7 +21,7 @@
     nav a{font-size:.9rem;color:#166534;padding:6px 12px;border-radius:999px;border:1px solid #bbf7d0;background:#dcfce7;transition:background .15s,color .15s,transform .1s}
     nav a:hover{background:#16a34a;color:#fff;transform:translateY(-1px)}
     nav a.active{background:#16a34a;color:#fff}
-    main{padding-bottom:60px}
+    main{padding-bottom:40px}
     section{padding:28px 0}
     section h2{font-size:1.5rem;margin-bottom:6px}
     section p.lead{color:#166534;margin-bottom:14px}
@@ -45,48 +45,19 @@
     .grid{display:grid;gap:16px}
     .grid-3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
     .card{background:#fff;border-radius:16px;padding:16px;border:1px solid #bbf7d0;font-size:.95rem;color:#166534}
-
-    /* how-it-works flow */
+    .card h3{margin-bottom:6px;font-size:1.05rem;color:#052e16}
     .flow-wrapper{background:#ecfdf3;border-radius:18px;padding:18px;border:1px solid #bbf7d0}
     .flow-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
     .flow-step{display:flex;align-items:flex-start;gap:10px}
     .flow-num{min-width:32px;height:32px;border-radius:999px;border:2px solid #16a34a;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;background:#ffffff;box-shadow:0 4px 10px rgba(22,163,74,.18)}
     .flow-text-title{font-weight:600;margin-bottom:2px;color:#052e16;font-size:.95rem}
     .flow-text-desc{font-size:.86rem;color:#166534}
-
-    /* highlight strip */
-    .highlight-strip{background:#16a34a;color:#ecfdf3;border-radius:16px;padding:14px 16px;margin-top:4px;margin-bottom:10px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-    .highlight-pill{background:#ecfdf3;color:#166534;border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:600}
-
-    /* testimonials */
-    .testimonials{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .testimonial-card{background:#ffffff;border-radius:16px;padding:16px;border:1px solid #bbf7d0;position:relative;font-size:.93rem;color:#166534}
-    .testimonial-card::before{content:"“";position:absolute;top:-10px;left:12px;font-size:2.5rem;color:#bbf7d0}
-    .testimonial-name{margin-top:10px;font-weight:600;color:#052e16;font-size:.9rem}
-    .testimonial-role{font-size:.8rem;color:#4b5563}
-
-    /* FAQ */
-    .faq-wrapper{background:#ffffff;border-radius:18px;padding:18px;border:1px solid #bbf7d0}
-    details{border-radius:10px;border:1px solid #bbf7d0;background:#f9fff9;margin-bottom:8px;padding:8px 10px}
-    summary{cursor:pointer;font-weight:600;font-size:.92rem;color:#052e16;list-style:none}
-    summary::-webkit-details-marker{display:none}
-    details p{margin-top:6px;font-size:.9rem;color:#166534}
-
-    /* floating whatsapp button */
-    .whatsapp-float{position:fixed;right:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:#16a34a;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 22px rgba(22,163,74,.5);z-index:50}
-    .whatsapp-float span{font-size:26px;color:#ffffff;line-height:1}
-
-    footer{background:#052e16;color:#e5e7eb;font-size:.85rem;margin-top:20px}
+    footer{background:#052e16;color:#e5e7eb;font-size:.85rem}
     .footer-inner{padding:18px 0}
     .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
     footer a{color:#9ca3af;margin-left:10px}
     footer a:hover{color:#e5e7eb}
-    @media(max-width:768px){
-      .hero{grid-template-columns:1fr}
-      header{position:static}
-      nav{justify-content:flex-start}
-      .highlight-strip{flex-direction:column;align-items:flex-start}
-    }
+    @media(max-width:768px){.hero{grid-template-columns:1fr}header{position:static}nav{justify-content:flex-start}}
   </style>
 </head>
 <body>
@@ -149,18 +120,6 @@
           <li>Verified lecturers and transparent recruitment process</li>
           <li>Support for both institutions and educators</li>
         </ul>
-      </div>
-    </section>
-
-    <!-- HIGHLIGHT STRIP -->
-    <section style="padding-top:0;">
-      <div class="highlight-strip">
-        <div><strong>Simple &amp; transparent consultancy</strong> for institutes and lecturers.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:8px;">
-          <div class="highlight-pill">🚫 No charges from institutes</div>
-          <div class="highlight-pill">✅ Clear charges for lecturers</div>
-          <div class="highlight-pill">📄 Proper billing &amp; documentation</div>
-        </div>
       </div>
     </section>
 
@@ -237,4 +196,56 @@
           <div class="flow-step">
             <div class="flow-num">4</div>
             <div>
-              <div class="flow-text-title">Demo scheduling, coordination
+              <div class="flow-text-title">Demo scheduling, coordination and college interaction</div>
+              <div class="flow-text-desc">
+                Demo classes, interaction with the college or institute and basic coordination are arranged as required.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">5</div>
+            <div>
+              <div class="flow-text-title">Final selection and support</div>
+              <div class="flow-text-desc">
+                Once both sides are satisfied, the institute makes the final selection. We remain available for any clarifications.
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-num">6</div>
+            <div>
+              <div class="flow-text-title">Joining assistance</div>
+              <div class="flow-text-desc">
+                We assist during the joining stage, helping with smooth communication between institute and lecturer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <strong>Rutvi Consultants</strong> · Partnership Firm<br />
+          Bengaluru, Karnataka, India
+        </div>
+        <div>
+          © <span id="year"></span> Rutvi Consultants. All rights reserved.
+        </div>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
+
+
