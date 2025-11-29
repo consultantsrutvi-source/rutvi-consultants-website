@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Rutvi Consultants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy policy for Rutvi Consultants – educational recruitment and consultancy services." />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+    body{background:#f0fdf4;color:#052e16;line-height:1.6}
+    a{text-decoration:none}
+    header{background:#ffffff;border-bottom:1px solid #bbf7d0;position:sticky;top:0;z-index:20}
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:12px;flex-wrap:wrap}
+    .logo-wrap{display:flex;align-items:center;gap:10px}
+    .logo-image{width:40px;height:40px;border-radius:999px;object-fit:cover;border:1px solid #bbf7d0}
+    .logo-text{font-weight:700;font-size:1.1rem;letter-spacing:.03em}
+    .logo-text span{color:#16a34a}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{font-size:.9rem;color:#166534;padding:6px 12px;border-radius:999px;border:1px solid:#bbf7d0;background:#dcfce7;transition:background .15s,color .15s,transform .1s}
+    nav a:hover{background:#16a34a;color:#fff;transform:translateY(-1px)}
+    nav a.active{background:#16a34a;color:#fff}
+    main{padding-bottom:40px}
+    section{padding:28px 0}
+    section h1{margin-bottom:6px}
+    section p.lead{color:#166534;margin-bottom:14px}
+    ul{margin-left:18px;margin-bottom:10px;color:#166534}
+    footer{background:#052e16;color:#e5e7eb;font-size:.85rem}
+    .footer-inner{padding:18px 0}
+    .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+    footer a{color:#9ca3af;margin-left:10px}
+    footer a:hover{color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo-wrap">
+        <img src="logo.png.jpg" alt="Rutvi Consultants Logo" class="logo-image" />
+        <div class="logo-text">Rutvi <span>Consultants</span></div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="institutes.html">For Institutes</a>
+        <a href="lecturers.html">For Lecturers</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html" class="active">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Privacy Policy</h1>
+      <p class="lead">
+        We respect your privacy and handle your details with care.
+      </p>
+      <p>
+        When you contact Rutvi Consultants by phone, WhatsApp or email, we may collect
+        basic information such as your name, contact number, email address and details
+        about your institute or teaching requirement.
+      </p>
+      <p>We use this information only to:</p>
+      <ul>
+        <li>Respond to your enquiry</li>
+        <li>Share relevant information about faculty or vacancies</li>
+        <li>Coordinate communication between institutes and lecturers</li>
+      </ul>
+      <p>
+        We do not sell your personal information to unrelated third parties for marketing.
+        Information is shared only with the parties directly involved in the consultancy
+        process, where it is relevant and handled with reasonable care.
+      </p>
+      <p>
+        If you would like us to update or delete your contact details from our records,
+        please email us at <strong>Consultantsrutvi@gmail.com</strong>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <strong>Rutvi Consultants</strong> · Partnership Firm<br />
+          Bengaluru, Karnataka, India
+        </div>
+        <div>
+          © <span id="year"></span> Rutvi Consultants. All rights reserved.
+        </div>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
