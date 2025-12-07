@@ -1,0 +1,99 @@
+<!-- Lecturer Registration Form - paste into your landing page -->
+<div id="lect-form" style="max-width:720px;margin:20px auto;padding:16px;border-radius:8px;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,0.06);font-family:Inter,Arial;">
+  <h2 style="margin:0 0 8px">Lecturer Registration</h2>
+  <p style="margin:0 0 12px;color:#556">Fill details — we will contact you for next steps. Ref will be generated automatically.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div><label>Full name</label><input id="lr_name" type="text" placeholder="Your full name" /></div>
+    <div><label>Phone</label><input id="lr_phone" type="tel" placeholder="Mobile number" /></div>
+    <div><label>Email (optional)</label><input id="lr_email" type="email" placeholder="Email" /></div>
+    <div>
+      <label>Subject</label>
+      <select id="lr_subject">
+        <option value="">Select subject</option>
+        <option>Physics</option><option>Maths</option><option>Chemistry</option><option>Zoology</option><option>Botany</option><option>Biology</option><option>Others</option>
+      </select>
+    </div>
+    <div>
+      <label>Level</label>
+      <select id="lr_level">
+        <option value="">Select level</option>
+        <option>Boards</option><option>KCET</option><option>NEET</option><option>JEE Mains</option><option>JEE Advanced</option><option>Others</option>
+      </select>
+    </div>
+    <div><label>Experience (yrs)</label><input id="lr_exp" type="number" min="0" placeholder="e.g. 3" /></div>
+    <div><label>Preferred city</label><input id="lr_city" type="text" placeholder="City" /></div>
+    <div><label>Expected salary (₹)</label><input id="lr_salary" type="text" placeholder="e.g. 75000" /></div>
+  </div>
+
+  <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+    <div style="flex:1">
+      <label>Collected by</label>
+      <select id="lr_collected" style="width:100%">
+        <option>Nandan</option><option>Nithik</option><option>Nandan</option><option>San jana</option><option>Gaanavi</option><option>Nitish</option>
+      </select>
+    </div>
+    <div style="flex:1">
+      <label>Notes (optional)</label>
+      <input id="lr_notes" placeholder="Short note (e.g. availability)" />
+    </div>
+  </div>
+
+  <div style="margin-top:12px;display:flex;gap:8px">
+    <button id="lr_submit" style="background:#0b946f;color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer">Register</button>
+    <button id="lr_clear" style="background:#fff;border:1px solid #e6f3ee;padding:10px;border-radius:8px;cursor:pointer">Clear</button>
+    <div id="lr_msg" style="margin-left:10px;color:#2a6;align-self:center"></div>
+  </div>
+</div>
+
+<script>
+/* CONFIG: paste your webapp exec URL here */
+const LR_SCRIPT_URL = "PASTE_YOUR_WEBAPP_EXEC_URL_HERE";
+const DEFAULT_COLLECTED_BY = "Nandan"; // change default if you want
+
+document.getElementById('lr_collected').value = DEFAULT_COLLECTED_BY;
+
+function jsonpGet(url, cbPrefix, cb){
+  const cbName = cbPrefix + '_' + Date.now();
+  window[cbName] = function(data){ try{ cb(data); } finally { const s=document.getElementById(cbName); if(s) s.remove(); delete window[cbName]; } };
+  const sc=document.createElement('script'); sc.id=cbName; sc.src = url + '&callback=' + cbName; document.body.appendChild(sc);
+}
+
+document.getElementById('lr_submit').addEventListener('click', function(){
+  const name = document.getElementById('lr_name').value.trim();
+  const phone = document.getElementById('lr_phone').value.trim();
+  if(!name || !phone){ document.getElementById('lr_msg').innerText = 'Name & phone required'; return; }
+  const payload = {
+    action: 'register_lecturer',
+    fullName: name,
+    phone: phone,
+    email: document.getElementById('lr_email').value.trim(),
+    subject: document.getElementById('lr_subject').value,
+    level: document.getElementById('lr_level').value,
+    experienceYears: document.getElementById('lr_exp').value,
+    preferredCity: document.getElementById('lr_city').value,
+    expectedSalary: document.getElementById('lr_salary').value,
+    collectedBy: document.getElementById('lr_collected').value,
+    notes: document.getElementById('lr_notes').value
+  };
+  const qs = Object.keys(payload).map(k=>encodeURIComponent(k)+'='+encodeURIComponent(payload[k]||'')).join('&');
+  document.getElementById('lr_msg').innerText = 'Saving...';
+  jsonpGet(LR_SCRIPT_URL + '?' + qs, 'lrSave', function(resp){
+    if(resp && resp.status === 'OK'){
+      document.getElementById('lr_msg').innerText = 'Registered ✔ Ref: ' + resp.ref;
+      document.getElementById('lr_submit').disabled = true;
+      setTimeout(()=>{ document.getElementById('lr_submit').disabled = false; clearForm(); }, 2000);
+    } else {
+      document.getElementById('lr_msg').innerText = 'Save failed';
+      console.error(resp);
+    }
+  });
+});
+
+document.getElementById('lr_clear').addEventListener('click', clearForm);
+function clearForm(){
+  ['lr_name','lr_phone','lr_email','lr_subject','lr_level','lr_exp','lr_city','lr_salary','lr_notes'].forEach(id=>{ const el=document.getElementById(id); if(el) el.value=''; });
+  document.getElementById('lr_collected').value = DEFAULT_COLLECTED_BY;
+  document.getElementById('lr_msg').innerText = '';
+}
+</script>
